@@ -38,4 +38,12 @@ npm i -D lint-staged
 add .lintstagedrc.json
 lint-staged will make sure that husky only checks the files that have been changed
 
+commit "chore: add husky and lint-staged"
+
+npm i -D jest @types/jest ts-jest
+npx jest --init
+add config to jest.config.ts
+collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+
+git c "chore: add jest"
 ============================================================================================
