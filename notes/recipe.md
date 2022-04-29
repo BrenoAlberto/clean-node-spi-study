@@ -47,3 +47,5 @@ collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
 
 git c "chore: add jest"
 ============================================================================================
+
+Sempre commit primeiro prod e depois test
