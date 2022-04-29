@@ -5,7 +5,6 @@ import { HttpRequest, HttpResponse, Controller, EmailValidator, AddAccount } fro
 export class SignUpController implements Controller {
   constructor (private readonly emailValidator: EmailValidator, private readonly addAccount: AddAccount) {}
 
-  // @ts-expect-error
   handle (httpRequest: HttpRequest): HttpResponse {
     try {
       const requiredFields = ['name', 'email', 'password', 'passwordConfirmation']
@@ -22,11 +21,15 @@ export class SignUpController implements Controller {
       if (!isValid) {
         return badRequest(new InvalidParamError('email'))
       }
-      this.addAccount.add({
+      const account = this.addAccount.add({
         name,
         email,
         password
       })
+      return {
+        statusCode: 200,
+        body: account
+      }
     } catch (err) {
       return serverError()
     }
