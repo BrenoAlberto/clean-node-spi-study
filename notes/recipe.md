@@ -49,3 +49,6 @@ git c "chore: add jest"
 ============================================================================================
 
 Sempre commit primeiro prod e depois test
+
+
+jest com --findRelatedTests = para encontrar testes relacionados aos arquivos que foram alterados
