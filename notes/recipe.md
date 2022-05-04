@@ -52,3 +52,18 @@ Sempre commit primeiro prod e depois test
 
 
 jest com --findRelatedTests = para encontrar testes relacionados aos arquivos que foram alterados
+
+
+=======================CRYPTO============================================================
+npm i bcrypt
+============================================================================================
+
+=======================MONGO DB============================================================
+https://github.com/shelfio/jest-mongodb
+
+npm i -D @shelf/jest-mongodb @types/mongodb
+npm i mongodb
+
+add in jest config
+preset: '@shelf/jest-mongodb',
+============================================================================================
