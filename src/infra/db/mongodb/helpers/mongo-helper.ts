@@ -10,5 +10,15 @@ export const MongoHelper = {
   },
   getCollection (name: string): Collection {
     return this.client.db().collection(name)
+  },
+  map (document: any): any {
+    const {
+      _id, ...documentWitoutId
+    } = document
+
+    return {
+      id: _id.toString(),
+      ...documentWitoutId
+    }
   }
 }
