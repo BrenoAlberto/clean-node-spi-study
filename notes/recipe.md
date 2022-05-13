@@ -1,4 +1,5 @@
-========== INITAL SETUP ====================================================================
+# INITAL SETUP
+
 git init
 npm init -y
 commit "chore: add npm"
@@ -46,7 +47,8 @@ add config to jest.config.ts
 collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
 
 git c "chore: add jest"
-============================================================================================
+
+---
 
 Sempre commit primeiro prod e depois test
 
@@ -54,11 +56,12 @@ Sempre commit primeiro prod e depois test
 jest com --findRelatedTests = para encontrar testes relacionados aos arquivos que foram alterados
 
 
-=======================CRYPTO============================================================
+### CRYPTO
 npm i bcrypt
-============================================================================================
+  
+---
 
-=======================MONGO DB============================================================
+### MONGO DB
 https://github.com/shelfio/jest-mongodb
 
 npm i -D @shelf/jest-mongodb @types/mongodb
@@ -66,4 +69,6 @@ npm i mongodb
 
 add in jest config
 preset: '@shelf/jest-mongodb',
-============================================================================================
+
+---
+
