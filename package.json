@@ -1,7 +1,6 @@
 {
   "name": "clean-node-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
@@ -34,5 +33,14 @@
     "bcrypt": "^5.0.1",
     "mongodb": "^4.5.0",
     "validator": "^13.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrenoAlberto/clean-node-spi-study.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BrenoAlberto/clean-node-spi-study/issues"
+  },
+  "homepage": "https://github.com/BrenoAlberto/clean-node-spi-study#readme",
+  "description": ""
 }
