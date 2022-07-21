@@ -5,7 +5,7 @@ commit "chore: add npm"
 
 git c - micro commits every time
 npm i -D git-commit-msg-linter - so that we can ensure that the commits follow good conventions
-https://www.conventionalcommits.org/en/v1.0.0/
+<https://www.conventionalcommits.org/en/v1.0.0/>
 npm i -D typescript
 npm i -D @types/node - so that we can use node types
 commit "chore: add commit linter"
@@ -15,10 +15,10 @@ outDir - where to put the compiled js files
 module - the module to compile
 target - the target to compile
 esModuleInterop - true to enable esModuleInterop
-commit "chore: add typescript"
+commit  
 
 add linter
-https://standardjs.com/rules.html
+<https://standardjs.com/rules.html>
 npm i eslint-config-standard-with-typescript
 install and enable ESlint vscode extension
 create .eslintrc.json
@@ -50,16 +50,14 @@ git c "chore: add jest"
 
 Sempre commit primeiro prod e depois test
 
-
 jest com --findRelatedTests = para encontrar testes relacionados aos arquivos que foram alterados
-
 
 =======================CRYPTO============================================================
 npm i bcrypt
 ============================================================================================
 
 =======================MONGO DB============================================================
-https://github.com/shelfio/jest-mongodb
+<https://github.com/shelfio/jest-mongodb>
 
 npm i -D @shelf/jest-mongodb @types/mongodb
 npm i mongodb
